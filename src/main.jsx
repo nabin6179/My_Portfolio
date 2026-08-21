@@ -225,6 +225,9 @@ function App() {
               {item}
             </a>
           ))}
+          <a href="https://blog.tiwarinabin.com.np" target="_blank" rel="noreferrer" onClick={() => setNavOpen(false)}>
+            BLOG
+          </a>
         </nav>
         <div className="status-pill">
           <span className="status-dot" aria-hidden="true"></span>
