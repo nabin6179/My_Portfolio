@@ -430,35 +430,43 @@ function App() {
         </section>
 
         <section className="section reveal" id="contact">
-          <div className="section-head">
-            <p className="eyebrow mono">CONTACT</p>
-            <h2>OPEN TO THE RIGHT KIND OF WORK</h2>
-          </div>
-          <div className="contact-grid">
-            <article className="contact-card">
-              <p className="contact-label mono">EMAIL</p>
-              <p className="contact-value">{portfolioData.contact.email}</p>
-              <a className="button secondary" href={`mailto:${portfolioData.contact.email}`}>
-                EMAIL
-              </a>
-            <article className="contact-card">
-              <p className="contact-label mono">LOCATION</p>
-              <p className="contact-value">{portfolioData.contact.location}</p>
-            </article>
-            <article className="contact-card">
-              <p className="contact-label mono">PUBLIC LINKS</p>
-              <p className="contact-copy">No verified GitHub, LinkedIn, or personal website URL was present in the source files.</p>
-              <div className="source-list">
-                {portfolioData.contact.publicHandles.map((handle) => (
-                  <span className="source-badge" key={handle}>
-                    {handle}
-                  </span>
-                ))}
-              </div>
-              <p className="contact-copy">{portfolioData.contact.availability}</p>
-            </article>
-          </div>
-        </section>
+  <div className="section-head">
+    <p className="eyebrow mono">CONTACT</p>
+    <h2>OPEN TO THE RIGHT KIND OF WORK</h2>
+  </div>
+
+  <div className="contact-grid">
+    <article className="contact-card">
+      <p className="contact-label mono">EMAIL</p>
+      <p className="contact-value">{portfolioData.contact.email}</p>
+      <a className="button secondary" href={`mailto:${portfolioData.contact.email}`}>
+        EMAIL
+      </a>
+    </article>
+
+    <article className="contact-card">
+      <p className="contact-label mono">LOCATION</p>
+      <p className="contact-value">{portfolioData.contact.location}</p>
+    </article>
+
+    <article className="contact-card">
+      <p className="contact-label mono">PUBLIC LINKS</p>
+      <p className="contact-copy">
+        No verified GitHub, LinkedIn, or personal website URL was present in the source files.
+      </p>
+
+      <div className="source-list">
+        {portfolioData.contact.publicHandles.map((handle) => (
+          <span className="source-badge" key={handle}>
+            {handle}
+          </span>
+        ))}
+      </div>
+
+      <p className="contact-copy">{portfolioData.contact.availability}</p>
+    </article>
+  </div>
+</section>
       </main>
 
       <footer className="site-footer">
