@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nabin Tiwari">
+  <rect width="64" height="64" rx="18" fill="#0A0A0A"/>
+  <rect x="11" y="11" width="42" height="42" rx="13" fill="none" stroke="#242424"/>
+  <path d="M18 40V24h6l13 17V24h9v16h-6L27 23v17z" fill="#F5F5F5"/>
+  <circle cx="48" cy="18" r="3" fill="#B7FF3C"/>
+</svg>
