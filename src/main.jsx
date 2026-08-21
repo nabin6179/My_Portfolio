@@ -441,14 +441,6 @@ function App() {
               <a className="button secondary" href={`mailto:${portfolioData.contact.email}`}>
                 EMAIL
               </a>
-            </article>
-            <article className="contact-card">
-              <p className="contact-label mono">PHONE</p>
-              <p className="contact-value">{portfolioData.contact.phone}</p>
-              <a className="button secondary" href={`tel:${portfolioData.contact.phone.replace(/\s+/g, '')}`}>
-                CALL
-              </a>
-            </article>
             <article className="contact-card">
               <p className="contact-label mono">LOCATION</p>
               <p className="contact-value">{portfolioData.contact.location}</p>

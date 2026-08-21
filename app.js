@@ -280,7 +280,6 @@ function renderContact(contact) {
   elements.contactGrid.replaceChildren();
   const cards = [
     { label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
-    { label: 'Phone', value: contact.phone, href: `tel:${contact.phone.replace(/\s+/g, '')}` },
     { label: 'Location', value: contact.location }
   ];
 

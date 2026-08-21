@@ -196,11 +196,10 @@ function buildAnswer(data, question) {
       })
     },
     {
-      terms: ['contact', 'email', 'phone', 'reach', 'linkedin', 'github', 'website'],
+      terms: ['contact', 'email', 'reach', 'linkedin', 'github', 'website'],
       build: () => ({
         answer: [
           `Email: ${data.contact.email}`,
-          `Phone: ${data.contact.phone}`,
           `Location: ${data.contact.location}`,
           `Public links: No verified GitHub, LinkedIn, or personal website URL was present in the source files.`
         ].join('\n'),
