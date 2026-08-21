@@ -84,49 +84,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const supportsPointer = window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!supportsPointer) return undefined;
-
-    document.body.classList.add('has-pointer');
-    let x = window.innerWidth / 2;
-    let y = window.innerHeight / 2;
-    let targetX = x;
-    let targetY = y;
-
-    const move = (event) => {
-      targetX = event.clientX;
-      targetY = event.clientY;
-    };
-
-    const tick = () => {
-      x += (targetX - x) * 0.18;
-      y += (targetY - y) * 0.18;
-      if (cursorDotRef.current && cursorRingRef.current) {
-        cursorDotRef.current.style.left = `${x}px`;
-        cursorDotRef.current.style.top = `${y}px`;
-        cursorRingRef.current.style.left = `${x}px`;
-        cursorRingRef.current.style.top = `${y}px`;
-      }
-      requestAnimationFrame(tick);
-    };
-
-    const over = (event) => {
-      document.body.classList.toggle('cursor-hover', Boolean(event.target.closest('a, button, summary, textarea')));
-    };
-
-    window.addEventListener('pointermove', move, { passive: true });
-    window.addEventListener('pointerdown', move, { passive: true });
-    document.addEventListener('pointerover', over);
-    requestAnimationFrame(tick);
-
-    return () => {
-      window.removeEventListener('pointermove', move);
-      window.removeEventListener('pointerdown', move);
-      document.removeEventListener('pointerover', over);
-    };
-  }, []);
-
-  useEffect(() => {
     document.title = `${portfolioData.identity.name} - ${portfolioData.identity.headline}`;
   }, []);
 
@@ -202,9 +159,6 @@ function App() {
           <span>MODE PORTFOLIO</span>
         </div>
       </div>
-
-      <div className="cursor-dot" ref={cursorDotRef} aria-hidden="true"></div>
-      <div className="cursor-ring" ref={cursorRingRef} aria-hidden="true"></div>
 
       <header className="site-header">
         <a className="brand" href="#top">
