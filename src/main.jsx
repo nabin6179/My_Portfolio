@@ -429,17 +429,21 @@ function App() {
           </div>
         </section>
 
-        <section className="section reveal" id="contact">
+      <section className="section reveal" id="contact">
   <div className="section-head">
     <p className="eyebrow mono">CONTACT</p>
     <h2>OPEN TO THE RIGHT KIND OF WORK</h2>
   </div>
 
   <div className="contact-grid">
+
     <article className="contact-card">
       <p className="contact-label mono">EMAIL</p>
       <p className="contact-value">{portfolioData.contact.email}</p>
-      <a className="button secondary" href={`mailto:${portfolioData.contact.email}`}>
+      <a
+        className="button secondary"
+        href={`mailto:${portfolioData.contact.email}`}
+      >
         EMAIL
       </a>
     </article>
@@ -451,20 +455,53 @@ function App() {
 
     <article className="contact-card">
       <p className="contact-label mono">PUBLIC LINKS</p>
+
       <p className="contact-copy">
-        No verified GitHub, LinkedIn, or personal website URL was present in the source files.
+        Find me online
       </p>
 
       <div className="source-list">
-        {portfolioData.contact.publicHandles.map((handle) => (
-          <span className="source-badge" key={handle}>
-            {handle}
-          </span>
-        ))}
+
+        {portfolioData.contact.github && (
+          <a
+            className="source-badge"
+            href={portfolioData.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        )}
+
+        {portfolioData.contact.linkedin && (
+          <a
+            className="source-badge"
+            href={portfolioData.contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        )}
+
+        {portfolioData.contact.website && (
+          <a
+            className="source-badge"
+            href={portfolioData.contact.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </a>
+        )}
+
       </div>
 
-      <p className="contact-copy">{portfolioData.contact.availability}</p>
+      <p className="contact-copy">
+        {portfolioData.contact.availability}
+      </p>
     </article>
+
   </div>
 </section>
       </main>
