@@ -14,9 +14,7 @@ function App() {
       text: "Ask me about Nabin's education, work, projects, skills, certifications, labs, or public contact information."
     }
   ]);
-  const cursorDotRef = useRef(null);
-  const cursorRingRef = useRef(null);
-
+ 
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const timer = window.setTimeout(() => setReady(true), reducedMotion ? 0 : 900);
