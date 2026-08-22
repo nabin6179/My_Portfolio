@@ -130,8 +130,8 @@ const PORTFOLIO_DATA = {
     availability: "Open to Security Analyst, Network Security, and Penetration Testing internships - remote or on-site.",
     github: "https://github.com/nabin6179",
     linkedin: "https://www.linkedin.com/in/nabintiwari000/",
-    website: "https://tiwarinabin.com.np",
-    publicHandles: ["nabintiwari000", "nabin6179", "0xNabin"]
+    Blog: "https://blog.tiwarinabin.com.np",
+    TryHackme: "https://tryhackme.com/p/0xNabin"
   }
 };
 
