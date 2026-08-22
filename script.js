@@ -386,7 +386,7 @@ function renderContact(contact) {
     { label: 'Location', value: contact.location },
     { label: 'GitHub', value: 'github.com/nabin6179', href: contact.github },
     { label: 'LinkedIn', value: 'linkedin.com/in/nabintiwari000', href: contact.linkedin },
-    { label: 'Website', value: 'tiwarinabin.com.np', href: contact.website }
+    { label: 'Blog', value: 'blog.tiwarinabin.com.np', href: contact.blog }
   ];
 
   for (const item of cards) {
