@@ -113,7 +113,6 @@ const PORTFOLIO_DATA = {
     { name: "Certified Cybersecurity Foundations", issuer: "Hackviser", date: "21 Aug 2026", credential: "HV-CORE-1TFVJW70", file: "Certified Cybersecurity Foundations.pdf", sources: ["README.md", "Certified Cybersecurity Foundations.pdf"] },
     { name: "certificate of participation", issuer: " TRIVARNA CTF", date: "20 Aug 2026", credential: "null", file: "certificate.png", sources: ["README.md", "certificate.png"] }
 
-
   ], TRIVARNA CTF
   lab: [
     { category: "WEB", items: ["Bootcamp on Web Application Penetration Testing", "Security Playground", "Web App Security Assessment Framework"] },
