@@ -110,8 +110,7 @@ const PORTFOLIO_DATA = {
     { name: "Deloitte Australia - Cyber Job Simulation", issuer: "Forage", date: "Aug 2026", credential: "6a7eb2faaa694bdf893e05d8", file: "Cyber Job Simulation.pdf", sources: ["README.md", "Cyber Job Simulation.pdf"] },
     { name: "Hacker Holidays Completion Certificate", issuer: "TryHackMe", date: "Aug 2026", credential: "THM-IPQJHIJNDH", file: "THM-IPQJHIJNDH.pdf", sources: ["README.md", "THM-IPQJHIJNDH.pdf"] },
     { name: "Bootcamp on Web Application Penetration Testing", issuer: "Texas College of Management & IT", date: "9 Aug 2026", credential: "CERT-2026-00011", file: "Bootcamp on Web Application Penetration Testing.pdf", sources: ["README.md", "Bootcamp on Web Application Penetration Testing.pdf"] },
-    { name: "Certified Cybersecurity Foundations", issuer: "Hackviser", date: "21 Aug 2026", credential: "HV-CORE-1TFVJW70", file: "Certified Cybersecurity Foundations.pdf", sources: ["README.md", "Certified Cybersecurity Foundations.pdf"] },
-    { name: "certificate of participation", issuer: " TRIVARNA CTF", date: "20 Aug 2026", credential: "null", file: "certificate.png", sources: ["README.md", "certificate.png"] }
+    { name: "Certified Cybersecurity Foundations", issuer: "Hackviser", date: "21 Aug 2026", credential: "HV-CORE-1TFVJW70", file: "Certified Cybersecurity Foundations.pdf", sources: ["README.md", "Certified Cybersecurity Foundations.pdf"] }
 
   ], TRIVARNA CTF
   lab: [
